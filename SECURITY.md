@@ -21,13 +21,20 @@ Wybierz branch do którego chcesz merge'ować (1), branch z którego chcesz merg
 ## 1. Wprowadzenie
 * Zainstaluj [Github desktop](https://desktop.github.com/download/).
 * Zainstaluj [Git LFS](https://git-lfs.com/).
-* Skonfiguruj github desktop![[Zrzut ekranu 2026-02-27 125423 1.png]]
-* Pobierz repozytorium **LudicLab7/vigilant-octo-enigma** (prawdopodobnie ulegnie zmianie)![[Zrzut ekranu 2026-02-27 125743.png]]
-* Inicjalizuj Git LFS![[Zrzut ekranu 2026-02-27 125826.png]]
-* Przełączasz się na dev![[Zrzut ekranu 2026-02-27 125851.png]]
-* Import projektu do unity ![[Zrzut ekranu 2026-02-27 130028.png]]![[Zrzut ekranu 2026-02-27 130033.png]] ![[Zrzut ekranu 2026-02-27 130049.png]]
+* Skonfiguruj github desktop![[img/Zrzut ekranu 2026-02-27 125423 1.png]]
+* Pobierz repozytorium **LudicLab7/vigilant-octo-enigma** (prawdopodobnie ulegnie zmianie)![[img/Zrzut ekranu 2026-02-27 125743.png]]
+* Inicjalizuj Git LFS![[img/Zrzut ekranu 2026-02-27 125826.png]]
+* Przełączasz się na dev![[img/Zrzut ekranu 2026-02-27 125851.png]]
+* Import projektu do unity ![[img/Zrzut ekranu 2026-02-27 130028.png]]![[img/Zrzut ekranu 2026-02-27 130033.png]] ![[img/Zrzut ekranu 2026-02-27 130049.png]]
 
 ## 2.Rozpoczęcie Pracy
-* Tworzysz nowy branch![[Zrzut ekranu 2026-02-27 131227.png]]
-* Przesyłasz branch do repozytorium![[Zrzut ekranu 2026-02-27 131248.png]]
-* Rozpoczynasz prace na projekcie (**WAŻNE aby maksymalnie jedna osoba pracowała nad daną sceną w unity projekt, bo spowoduje to konflikty**)
+* Tworzysz nowy branch![[img/Zrzut ekranu 2026-02-27 131227.png]]
+* Przesyłasz branch do repozytorium![[img/Zrzut ekranu 2026-02-27 131248.png]]
+* Rozpoczynasz prace na projekcie (**WAŻNE aby maksymalnie jedna osoba pracowała nad daną sceną w unity projekt, bo spowoduje to konflikty**)![[img/Zrzut ekranu 2026-02-27 131259.png]]
+* W trakcie pracy możesz zauważyć, że będą pojawiać ci się pliki![[img/Zrzut ekranu 2026-02-27 131438.png]]
+* Commituj jak najczęściej ![[img/Zrzut ekranu 2026-02-27 131717.png]]
+* Po zakończonej pracy wysyłasz wszystko do repozytorium ![[img/Zrzut ekranu 2026-02-27 131732.png]]
+* Oraz tworzysz pull request aby ktoś przejrzał twój kod i dodał go do repozytorium![[img/Zrzut ekranu 2026-02-27 131745.png]] ![[Zrzut ekranu 2026-02-27 131751.png]]
+* Zawsze wybierasz base: dev ![[img/Zrzut ekranu 2026-02-27 131759.png]]
+* Gdy klikniesz create pull request przeniesie cię na stronę githuba tam uzupełniasz wszystkie detale i wysyłasz do weryfikacji ![[img/Zrzut ekranu 2026-02-27 131934.png]]
+* To wszystko klikasz create pull request i kwestionujesz swoje wybory życiowe
