@@ -1,5 +1,5 @@
 # JAK UŻYWAĆ GIT
-
+# OPCJA A (cmd)
 ## 1. Wprowadzenie
 * Zainstaluj [git lfs](https://git-lfs.com/).
 * Ściągnij repozytorium używając `git clone https://github.com/LudicLab7/vigilant-octo-enigma.git`
@@ -16,3 +16,18 @@
 * Jeśli skończyłeś twoje zadanie, zpushuj brancha na githuba za pomocą `git push -u origin [nazwa-brancha]` (nie dev! sprawdź czy na pewno byłeś na nowym branchu! visual studio znacznie to ułatwia przez gui). Pamiętaj o przetestowaniu twojego kodu, nawet jeśli jest bardzo prosty.
 * Na githubie otwórz nowy pull request: ![Nowy pr](img/pr_create.png)
 Wybierz branch do którego chcesz merge'ować (1), branch z którego chcesz merge'ować (2), Wybierz dobry tytuł oraz opis dla pull requesta - zwięzły tytuł i szczegółowy ale też zwięzły opis, w którym opisujesz co i jak zrobiłeś (nie jakoś super szczegółowo, bardziej na zasadzie "zrobiłem to i to używając tego i tego", tyle wystarczy. Jeśli bardzo nie chce ci się pisać, poproś chatbota) ![Nowy pr - wypełnienie formularza](img/pr_form.png) Po stworzeniu pull requesta poczekaj na review, jeśli wystąpią problemy, napraw je. Po zaakceptowaniu pr'a zmerge'uj go do dev, jeśli akceptujący jeszcze tego nie zrobił.
+
+# OPCJA B (github desktop)
+## 1. Wprowadzenie
+* Zainstaluj [Github desktop](https://desktop.github.com/download/).
+* Zainstaluj [Git LFS](https://git-lfs.com/).
+* Skonfiguruj github desktop![[Zrzut ekranu 2026-02-27 125423 1.png]]
+* Pobierz repozytorium **LudicLab7/vigilant-octo-enigma** (prawdopodobnie ulegnie zmianie)![[Zrzut ekranu 2026-02-27 125743.png]]
+* Inicjalizuj Git LFS![[Zrzut ekranu 2026-02-27 125826.png]]
+* Przełączasz się na dev![[Zrzut ekranu 2026-02-27 125851.png]]
+* Import projektu do unity ![[Zrzut ekranu 2026-02-27 130028.png]]![[Zrzut ekranu 2026-02-27 130033.png]] ![[Zrzut ekranu 2026-02-27 130049.png]]
+
+## 2.Rozpoczęcie Pracy
+* Tworzysz nowy branch![[Zrzut ekranu 2026-02-27 131227.png]]
+* Przesyłasz branch do repozytorium![[Zrzut ekranu 2026-02-27 131248.png]]
+* Rozpoczynasz prace na projekcie (**WAŻNE aby maksymalnie jedna osoba pracowała nad daną sceną w unity projekt, bo spowoduje to konflikty**)
