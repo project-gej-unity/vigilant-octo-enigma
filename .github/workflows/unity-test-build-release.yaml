@@ -72,18 +72,21 @@ jobs:
           name: Build-StandaloneWindows64
           path: build/StandaloneWindows64
 
-  release:
+    release:
     needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    environment: release-env   # wymaga aprowacji (ustaw w Settings → Environments)
+    environment: release-env
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
           name: Build-StandaloneWindows64
           path: build/
+
+      - name: List build contents (debug)
+        run: find build -type f -name "*.exe" || echo "No exe found"
 
       - name: Create pre-release
         uses: softprops/action-gh-release@v2
@@ -92,6 +95,6 @@ jobs:
           name: Pre-release dev-${{ github.sha_short }}
           prerelease: true
           generate_release_notes: true
-          files: build/StandaloneWindows64/*
+          files: build/StandaloneWindows64/*.exe,build/StandaloneWindows64/*.dll   # konkretne pliki zamiast /*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
