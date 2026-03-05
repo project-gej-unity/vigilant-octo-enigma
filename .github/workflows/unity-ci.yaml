@@ -2,7 +2,7 @@ name: Unity CI/CD
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ main ]
   pull_request:
     branches: [ main, dev ]
   workflow_dispatch:   # przycisk "Run workflow" w Actions tab
