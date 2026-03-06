@@ -78,23 +78,27 @@ jobs:
     permissions:
       contents: write
     environment: release-env
+
     steps:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
           name: Build-StandaloneWindows64
-          path: build/
+          path: build/StandaloneWindows64
+          merge-multiple: true
 
-      - name: List build contents (debug)
-        run: find build -type f -name "*.exe" || echo "No exe found"
+      - name: Debug list files
+        run: |
+          echo "=== tree build ==="
+          find build -maxdepth 5 -type f | sed 's/^/  /'
 
       - name: Create pre-release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v0.1.0-dev-${{ github.sha_short }}
-          name: Pre-release dev-${{ github.sha_short }}
+          tag_name: v0.1.0-dev-${{ github.sha }}
+          name: Pre-release dev-${{ github.sha }}
           prerelease: true
           generate_release_notes: true
-          files: build/StandaloneWindows64/*.exe,build/StandaloneWindows64/*.dll   # konkretne pliki zamiast /*
+          files: build/StandaloneWindows64/**
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
