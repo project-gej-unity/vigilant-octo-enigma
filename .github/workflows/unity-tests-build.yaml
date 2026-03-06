@@ -1,4 +1,4 @@
-name: Unity Tests
+name: Unity Test Build
 
 on:
   workflow_dispatch:
