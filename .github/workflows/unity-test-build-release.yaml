@@ -1,4 +1,4 @@
-name: Unity CI/CD
+name: Unity Test Build Release
 
 on:
   push:
