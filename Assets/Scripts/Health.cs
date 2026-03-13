@@ -10,4 +10,13 @@ public class Health : MonoBehaviour
     {
         currentHealth = health;
     }
+    public void TakeDamage(int damage)
+    {
+        health = currentHealth - damage;
+        if(health <= 0)
+        {
+            health = 0; //funkcja na umieranie czy cos ewentualnie animacja lub ragdoll, ale to juz pozniej
+        }
+
+    }
 }
