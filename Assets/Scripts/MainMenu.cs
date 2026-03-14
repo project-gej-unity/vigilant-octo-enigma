@@ -1,10 +1,11 @@
-using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class MainMenu : MonoBehaviour
 {
-    public SceneAsset playScene;
+    public SceneReference playScene;
 
     public void MainMenuPlayButton()
     {
